@@ -1,61 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Operadores relacionales:
+//Operadores lógicos:
 int main()
 {
-    printf("Operadores relacionales \n \n");
+    printf("Operadores logicos \n \n");
 
-    float valA, valB;
+    float valA, valB, valC;
     valA = 5;
-    valB = 10;
+    valB = valC = 10;
 
-    if(valA < valB)
+    if((valA < valB) && (valB == valC))
     {
-        printf("Pregunta 1: Cierto \n");
+        printf("Se cumplieron las dos condiciones \n");
     }
     else
     {
-        printf("Pregunta 1: Falso \n");
+        printf("No se cumplieron las dos condiciones \n");
     }
-    if(valA <= valB)
+    if((valA > valB) || (valA <= valC))
     {
-        printf("Pregunta 2: Cierto \n");
+        printf("Se cumplio por lo menos una de las dos condiciones \n");
     }
     else
     {
-        printf("Pregunta 2 : Falso \n");
+        printf("No se cumplieron las dos condiciones \n");
     }
-    if(valA > valB)
-    {
-        printf("Pregunta 3: Cierto \n");
-    }
-    else
-    {
-        printf("Pregunta 3: Falso \n");
-    }
-    if(valA >= valB)
-    {
-        printf("Pregunta 4: Cierto \n");
-    }
-    else
-    {
-        printf("Pregunta 4: Falso \n");
-    }
-    if(valA == valB)
-    {
-        printf("Pregunta 5: Cierto \n");
-    }
-    else
-    {
-        printf("Pregunta 5 : Falso \n");
-    }
-    if(valA != valB)
-    {
-        printf("Pregunta 6: Cierto \n");
-    }
-    else
-    {
-        printf("Pregunta 6: Falso \n");
-    }
+
     return 0;
 }
