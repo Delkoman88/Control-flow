@@ -1,24 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Condicional if:
+//Condicionales  if else:
 int main()
 {
-    printf("Condicion if \n");
+    printf("Condicion if else, else if: \n");
 
     float valA, valB, valC;
-    valA = valB = 100;
+    valA = 50;
+    valB = 100;
+    valC = 150;
 
-    printf("Primera condicion \n");
+    printf("Condicion \n");
     if(valA == valB)
-            printf("Ambos son iguales \n");
-
-
-    printf("Segunda condicion \n");
-    if(valA == valB)
-    {
-        printf("Ambos son iguales \n");
-        valC = valA + valB;
-        printf("Ademas la suma de ambos numeros es: %f", valC);
-    }
+       {
+        printf("No se va a cumplir esta condicion \n");
+       }
+    else if(valB == valC)
+       {
+           printf("tampoco se va a cumplir esta \n");
+       }
+    else
+        {
+            printf("Ninguna condicion se cumplio \n");
+            printf("Despues de esta linea el programa va a terminar");
+        }
     return 0;
 }
