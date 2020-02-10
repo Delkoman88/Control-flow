@@ -1,28 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Condicionales  if else:
+//if else challenge:
 int main()
 {
-    printf("Condicion if else, else if: \n");
 
-    float valA, valB, valC;
-    valA = 50;
-    valB = 100;
-    valC = 150;
+    int x = 5;
+    int y;
+    printf("Adivina el numero entre 1 y 10 que estoy pensando:  ");
+    scanf("%i", &y, "\n \n");
 
-    printf("Condicion \n");
-    if(valA == valB)
-       {
-        printf("No se va a cumplir esta condicion \n");
-       }
-    else if(valB == valC)
-       {
-           printf("tampoco se va a cumplir esta \n");
-       }
+    if (x == y)
+    {
+        printf("\n WOW, adivinaste!!!! \n \n");
+    }
     else
-        {
-            printf("Ninguna condicion se cumplio \n");
-            printf("Despues de esta linea el programa va a terminar");
-        }
+    {
+        printf("\n Ese no es, perdiste! \n \n");
+    }
     return 0;
 }
