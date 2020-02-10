@@ -1,29 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Operadores lógicos:
+//Reto 1 operadores relacionales y logicos:
 int main()
 {
-    printf("Operadores logicos \n \n");
+    float x;
+    float y;
+    printf("Si me das dos numeros enteros, te dare el menor entre ellos! \n \n");
+    printf("Ingresa el primer numero:");
+    scanf("%f", &x);
 
-    float valA, valB, valC;
-    valA = 5;
-    valB = valC = 10;
+     printf("Ingresa el segundo numero:");
+    scanf("%f", &y);
 
-    if((valA < valB) && (valB == valC))
+    if (x < y)
     {
-        printf("Se cumplieron las dos condiciones \n");
+        printf("\n El numero menor es: %f \n", x);
     }
     else
     {
-        printf("No se cumplieron las dos condiciones \n");
-    }
-    if((valA > valB) || (valA <= valC))
-    {
-        printf("Se cumplio por lo menos una de las dos condiciones \n");
-    }
-    else
-    {
-        printf("No se cumplieron las dos condiciones \n");
+        printf("\n El numero menor es: %f \n", y);
     }
 
     return 0;
