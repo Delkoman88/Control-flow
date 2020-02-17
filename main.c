@@ -1,30 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Operadores lógicos:
+//Reto 2:
 int main()
 {
-    printf("Operadores logicos \n \n");
+    printf("Para saber si reprobaste o no, ingresa tu calificacion: ");
+    //se definen las variables
+    float x;
 
-    float valA, valB, valC;
-    valA = 5;
-    valB = valC = 10;
+    //introducir la calificacion
+    scanf("%f", &x);
 
-    if((valA < valB) && (valB == valC))
+    if (x < 6.0)
     {
-        printf("Se cumplieron las dos condiciones \n");
+        printf("\n Estas reprobado \n");
     }
-    else
+    else if ((x >= 6.0) && (x <= 8.9))
     {
-        printf("No se cumplieron las dos condiciones \n");
+        printf("\n Estas aprobado \n");
     }
-    if((valA > valB) || (valA <= valC))
+    else if(x >= 9.0)
     {
-        printf("Se cumplio por lo menos una de las dos condiciones \n");
+        printf("\n Excelente trabajo, aprobaste! n.n  \n");
     }
-    else
-    {
-        printf("No se cumplieron las dos condiciones \n");
-    }
+
 
     return 0;
 }
