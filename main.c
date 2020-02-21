@@ -1,31 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Condicional switch:
+//Condicional switch challenge:
 int main()
 {
-   printf("Condicional switch \n");
+   printf(" Estas en un callejon que termina en 3 caminos diferentes, elige por cual seguiras tu camino.  \n");
 
-   int option;
+   char letra;
 
-    printf("\n Introduce un numero del 1 al 3: ");
-   scanf ("%i", &option);
+    printf("\n Escribe la letra a, b o c para elegir el camino a seguir: ");
+   scanf ("%c", &letra);
 
-   switch (option)
+   switch (letra)
    {
-   case 1:
-    printf("\n Elegiste el numero 1 \n");
+   case 'a':
+    printf("\n El camino que elegiste te lleva directamente a una playa paradisiaca llena de todas las comodidades que jamas pudiste imaginar \n");
     break;
 
-   case 2:
-    printf("\n Elegiste el numero 2 \n");
+   case 'b':
+    printf("\n Este camino te lleva directo a un bosque encantado lleno de peligros, pero si sobrevives te casaras con la princesa del reino \n");
     break;
 
-   case 3:
-    printf("\n Elegiste el numero 3 \n");
+   case 'c':
+    printf("\n Este camino te lleva directo a un cofre lleno de lingotes de oro, disfruta tu nueva vida! \n");
     break;
 
    default:
-    printf("\n Elegiste una opcion invalida \n");
+    printf("\n Elegiste una opcion invalida, has muerto de inmediato! \n");
     break;
 
    }
