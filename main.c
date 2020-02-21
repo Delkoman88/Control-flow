@@ -1,24 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Condicional if:
+//Condicional switch:
 int main()
 {
-    printf("Condicion if \n");
+   printf("Condicional switch \n");
 
-    float valA, valB, valC;
-    valA = valB = 100;
+   int option;
 
-    printf("Primera condicion \n");
-    if(valA == valB)
-            printf("Ambos son iguales \n");
+    printf("\n Introduce un numero del 1 al 3: ");
+   scanf ("%i", &option);
 
+   switch (option)
+   {
+   case 1:
+    printf("\n Elegiste el numero 1 \n");
+    break;
 
-    printf("Segunda condicion \n");
-    if(valA == valB)
-    {
-        printf("Ambos son iguales \n");
-        valC = valA + valB;
-        printf("Ademas la suma de ambos numeros es: %f", valC);
-    }
+   case 2:
+    printf("\n Elegiste el numero 2 \n");
+    break;
+
+   case 3:
+    printf("\n Elegiste el numero 3 \n");
+    break;
+
+   default:
+    printf("\n Elegiste una opcion invalida \n");
+    break;
+
+   }
+
     return 0;
 }
