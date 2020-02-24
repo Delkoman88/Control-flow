@@ -1,20 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-//While loops:
+//While loop challenge:
 int main()
 {
-  printf("Iterador while \n");
+  printf("Reto 5 de control de flujo, ciclo While: \n");
 
-  int limit;
+  char gato = '#';
 
-  scanf("%i", &limit);
+    int a = 1;
 
-  int i = 1;
-
-  while(i <= limit)
+  while(a <= 5)
   {
-      printf("Numero: %i \n", i);
-      i++;
+      printf("%c \n", gato);
+      a++;
   }
 
     return 0;
