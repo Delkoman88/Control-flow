@@ -1,24 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Condicional if:
+//Ciclo For:
 int main()
 {
-    printf("Condicion if \n");
+    printf("Iteradores For \n");
 
-    float valA, valB, valC;
-    valA = valB = 100;
+    int upperLim, bottomLim;
 
-    printf("Primera condicion \n");
-    if(valA == valB)
-            printf("Ambos son iguales \n");
+    printf("Imprimir en orden descendiente \n");
 
+    printf("\n Ingresar limite superior: ");
+    scanf("%i", &upperLim);
 
-    printf("Segunda condicion \n");
-    if(valA == valB)
+    printf("\n Ingresar limite inferior: ");
+    scanf("%i", &bottomLim);
+
+    for(int i = upperLim; i >= bottomLim; i--)
+
     {
-        printf("Ambos son iguales \n");
-        valC = valA + valB;
-        printf("Ademas la suma de ambos numeros es: %f", valC);
+        printf("El numero es: %i \n", i);
     }
+
+
     return 0;
 }
