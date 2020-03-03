@@ -1,21 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Do-While iterator:
+//Do-While iterator challenge:
 int main()
 {
-    printf("Iterador Do while \n");
+    printf("Reto, imprimir los primeros 100 numeros naturales usando do-while \n");
 
-    char answer = 'q';
-    char value;
+    int x = 0;
+    int y = 100;
 
     do
     {
-        printf("Ingresa una letra: ");
-        scanf("%c", &value);
-        printf("\n");
-    }while(value != answer);
-
-    printf("Coinciden las letras %c == %c ", value, answer);
+        x++;
+        printf("\n %i", x);
+    }while(x != y);
 
     return 0;
 }
