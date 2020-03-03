@@ -1,24 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Condicional if:
+//Do-While iterator:
 int main()
 {
-    printf("Condicion if \n");
+    printf("Iterador Do while \n");
 
-    float valA, valB, valC;
-    valA = valB = 100;
+    char answer = 'q';
+    char value;
 
-    printf("Primera condicion \n");
-    if(valA == valB)
-            printf("Ambos son iguales \n");
-
-
-    printf("Segunda condicion \n");
-    if(valA == valB)
+    do
     {
-        printf("Ambos son iguales \n");
-        valC = valA + valB;
-        printf("Ademas la suma de ambos numeros es: %f", valC);
-    }
+        printf("Ingresa una letra: ");
+        scanf("%c", &value);
+        printf("\n");
+    }while(value != answer);
+
+    printf("Coinciden las letras %c == %c ", value, answer);
+
     return 0;
 }
