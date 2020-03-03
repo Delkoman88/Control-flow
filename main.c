@@ -1,18 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Do-While iterator challenge:
+//Unidimensional arrays:
 int main()
 {
-    printf("Reto, imprimir los primeros 100 numeros naturales usando do-while \n");
+    printf("Arreglos unidimensionales \n");
 
-    int x = 0;
-    int y = 100;
+    int integerList[3];
+    integerList[0] = 4;
+    integerList[1] = 5;
+    integerList[2] = 6;
 
-    do
-    {
-        x++;
-        printf("\n %i", x);
-    }while(x != y);
+    float floatList[5] = {23.4, 34.5, 45.6, 21.8, 56.7};
+
+    char charList[4];
+    charList[0] = 'D';
+    charList[1] = 'a';
+    charList[2] = 'n';
+    charList[3] = 'i';
+
+    printf("\n Primer entero: \t\t %i", integerList[0]);
+    printf("\n Ultimo flotante: \t\t %f", floatList[4]);
+    printf("\n Lista de caracteres: \t\t %c%c%c%c", charList[0], charList[1], charList[2], charList[3]);
 
     return 0;
 }
