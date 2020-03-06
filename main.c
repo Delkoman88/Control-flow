@@ -5,7 +5,7 @@ int main()
 {
     printf("Arreglos bidimensionales: \n \n");
 
-    int bidimensionalArray[4][4];
+    int bidimensionalArray[3][4];
 
     bidimensionalArray [0][0] = 11;
     bidimensionalArray [0][1] = 12;
