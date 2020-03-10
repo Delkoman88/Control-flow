@@ -3,15 +3,26 @@
 
 int main()
 {
-    printf("Arreglos e iteradores: \n \n");
+    printf("Encontrar el numero mas grande de un arreglo: \n \n");
 
-    int integerArray [11];
+    int x;
 
-    for(int i = 0; i < 11; i++)
+    printf("Ingresa el tamaño del arreglo: ");
+    scanf("%i", &x);
+    int integerArray [x];
+
+
+    printf("Ingresa los (%i) valores del arreglo: \n", x);
+
+    for (int i = 0; i < x; i++)
     {
-        integerArray[i] = i*i;
-        printf("Valor (%i) : %i \n", i, integerArray[i]);
+        printf("Valor [%i]: ", i);
+          scanf ("%i", &integerArray[i]);
     }
+
+        if integerArray[i] >
+
+
 
     return 0;
 }
