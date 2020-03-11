@@ -3,13 +3,13 @@
 
 int main()
 {
-    printf("Arreglos bidimensionales e iteradores \n \n");
+    printf("Reto arreglos bidimensionales e iteradores \n \n");
 
-    int IntegerArray[4][5];
+    int IntegerArray[5][6];
 
-    for(int i = 0; i < 4; i++)
+    for(int i = 0; i < 5; i++)
     {
-        for(int j = 0; j < 5; j++)
+        for(int j = 0; j < 6; j++)
         {
             IntegerArray[i][j] = ((i+j) * 100 + j);
             printf("(%i, %i) : %i \n", i, j, IntegerArray[i][j]);
