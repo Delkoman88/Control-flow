@@ -4,23 +4,21 @@
 #include <time.h>
 int main()
 {
-    printf("Reto arreglos bidimensionales e iteradores \n \n");
+    printf("Cadena de caracteres \n \n");
 
-    int IntegerArray[5][6];
+    char nameC[50];
+    int size;
 
-    for(int i = 0; i < 5; i++)
-    {
-        for(int j = 0; j < 5; j++)
-        {
-            IntegerArray[i][j] = (6 + rand() % (11-6));
-            printf("(%i, %i) : %i \n", i, j, IntegerArray[i][j]);
-        }
-        for(int k = 5; k < 6; k++)
-        {
-            IntegerArray[i][k] = 0;
-            printf("(%i, %i) : %i \n", i, k, IntegerArray[i][k]);
-        }
-    }
+    printf("Ingresar el nombre con gets: \n");
+    gets(nameC);
+
+    printf("El nombre es: ");
+    puts(nameC);
+
+    size = strlen(nameC);
+
+    printf("\n El tamaño de la cadena es: %i \n", size);
+
 
     return 0;
 }
